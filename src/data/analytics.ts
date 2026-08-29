@@ -44,7 +44,7 @@ export const ANALYTICS: AnalyticsData = {
     ],
     model: "roberta",
   },
-  perClass: MODELS[4].perClass,
+  perClass: MODELS.find((m) => m.id === "roberta")?.perClass ?? [],
   bestModelAccuracy: 0.924,
 };
 
