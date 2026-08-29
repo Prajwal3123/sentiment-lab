@@ -138,7 +138,7 @@ export function StatusBadge({
   label?: ReactNode;
   className?: string;
 }) {
-  const s = STATUS_STYLES[status] ?? STATUS_STYLES.idle!;
+  const s = STATUS_STYLES[status] ?? STATUS_STYLES["idle"]!;
   const Icon = s.Icon;
   const spinning = status === "training" || status === "running" || status === "processing";
   return (
